@@ -1,0 +1,212 @@
+/* Slideshow container */
+.slide-container {
+    width: 96%;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slideshow-container {
+    position: relative;
+    margin: 9rem auto 1rem auto;
+    padding: 3.5rem 0;
+    overflow: hidden;
+    /* background: linear-gradient(135deg, #4A00E0, #8E2DE2); */
+    /* background: linear-gradient(135deg, #141E30, #243B55); */
+    background: linear-gradient(135deg, #FFFFFF, #D0C7FF);
+    /* background: linear-gradient(135deg, #FFFFFF, rgba(135, 206, 250, 0.529)); */
+    /* border: 2px solid #D0C7FF; */
+    border-radius: 50px;
+    /* box-shadow: inset 0px 0px 18px rgba(135, 206, 250, 0.529); */
+    /* box-shadow: -2.5px 2px 8px rgba(135, 206, 250); */
+    /* box-shadow: -2.5px 2px 8px rgb(206, 215, 220); */
+    /* box-shadow: inset 4px 4px 9px #cacaca,
+            inset -4px -4px 9px #f6f6f6; */
+    box-shadow:-4px -0px 0px rgb(140, 32, 212);
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.inner_slide_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+.slide_img_box{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.slide-text{
+    width: 60%;
+    padding: 2rem;
+}
+
+
+.slide_img {
+    width: 58%;
+    height: 50vh;
+    animation: bounce 2.5s infinite ease-in-out;
+    z-index: 100;
+}
+
+.slide_img_bg svg{
+    position: absolute;
+    top: -40%;
+    left: -2.5rem;
+}
+
+.slide_img_bg svg{
+    width: 40rem;
+    height: 40rem;
+    opacity: 0.9;
+}
+
+
+/* Bounce Effect */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #2b326477;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #2b3264;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .slide-text{
+        width: 100%;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+    .slide_img_box{
+        display: none;
+        width: 0px;
+        visibility: hidden;
+    }
+    .download-button {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+
+/* buttons */
+.download-button {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: left;
+}
+
+.market-btn {
+    min-width: 150px;
+    max-width: 200px;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 0.4rem;
+    -webkit-transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    border: 1px solid rgb(168, 38, 255);
+    /* background-color: rgb(168, 38, 255); */
+    background-color: #fff;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px rgb(140, 32, 212);
+}
+
+.market-btn .market-button-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.market-btn .market-button-title {
+    display: block;
+    color: rgb(168, 38, 255);
+    font-size: 1rem;
+}
+
+.market-btn .market-button-subtitle {
+    display: block;
+    margin-bottom: -0.25rem;
+    color: rgba(168, 38, 255, 0.438);
+    font-size: 0.75rem;
+}
+
+.market-btn:hover {
+    background-color: #2b3264;
+    text-decoration: none;
+    border: 1px solid #242a58;
+    box-shadow: 5px 5px 0px #2b3264c1;
+}
+
+.market-btn:hover .market-button-title {
+    color: #fff;
+}
+
+.market-btn:hover .market-button-subtitle {
+    color: #fafafa9e;
+}
+
+.dwn-icon {
+    fill: rgba(168, 38, 255, 0.778);
+}
+
+.market-btn:hover .dwn-icon {
+    fill: #fff;
+    transition: fill 0.2s ease;
+}

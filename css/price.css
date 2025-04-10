@@ -1,0 +1,114 @@
+/* Pricing Section */
+.pricing {
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.pricing-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.plan {
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 9px rgba(76, 117, 252, 0.3);
+    transition: transform 0.3s;
+    width: 350px;
+}
+
+.plan-recommend{
+    background: linear-gradient(135deg, #141E30, #243B55);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(76, 117, 252, 0.3);
+    transition: transform 0.3s;
+    width: 350px;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.plan-recommend:hover {
+    transform: scale(1.05);
+}
+
+.price {
+    font-family: "Coiny", system-ui;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1;
+    font-size: 24px;
+    margin: 1.5rem auto;
+}
+
+.light-price {
+    color: #fff;
+    font-family: "Coiny", system-ui;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1;
+    font-size: 24px;
+    margin: 1.5rem auto;
+}
+
+
+.features {
+    text-align: left;
+    list-style: none;
+    margin: 15px 0;
+}
+
+.features li {
+    padding: 5px 0;
+}
+
+.btn-price {
+    font-family: "Coiny", system-ui;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 2px solid #2b3264;
+    color: #2b3264;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.btn-price:hover {
+    background: #2b3264;
+    color: #fff;
+    text-decoration: none;
+    scale: 1.10;
+}
+
+.light-btn-price {
+    font-family: "Coiny", system-ui;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 2px solid #2b3264;
+    color: #2b3264;
+    background: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.light-btn-price:hover {
+    background: linear-gradient(135deg, #4776e6 0%, #8e54e9 100%);
+    color: #fff;
+    text-decoration: none;
+    scale: 1.10;
+}

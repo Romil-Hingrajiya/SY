@@ -1,0 +1,296 @@
+/* General Styles */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: #1a1a1a;
+  position: relative;
+}
+
+.container {
+  width: 90%;
+  max-width: 1300px;
+  margin: 4rem auto;
+  text-align: center;
+}
+
+#progress-bar {
+  width: 0%;
+  height: 4.5px;
+  background-color: #6366f1;
+  border-radius: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  transition: width 0.2s ease-out;
+}
+
+.tagline {
+  font-size: 3.7rem;
+  font-family: "Rubik Gemstones", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: capitalize;
+  /* color: #2b3264; */
+  color: rgb(140, 32, 212);
+  margin: 0;
+}
+
+.highlight-link {
+  font-family: "Coiny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  /* text-align: center; */
+  font-size: 1.7rem;
+  margin: 2rem 0;
+  color: #2b3264;
+}
+
+.nav-link {
+  font-family: "Coiny", system-ui;
+  font-weight: 100;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #4b56d2c7;
+}
+
+.nav-link:hover {
+  color: #4B56D2;
+}
+
+.nav-link.active-link {
+  color: #fff;
+  background: linear-gradient(135deg, #4776e6 0%, rgb(142, 84, 233) 100%);
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: inset 0 1px 4px rgba(142, 84, 233, 0.5);
+  font-weight: 400;
+}
+
+
+.title {
+  position: relative;
+  font-family: "Coiny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #2b3264;
+  margin: 2.2rem 0;
+  display: inline-block;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #0033cc, #6366f1);
+  border-radius: 4px;
+  /* transition: width 0.5s ease-in-out, left 0.5s ease-in-out; */
+  animation: expandLine 4s infinite ease-in-out;
+}
+
+/* Expanding line animation */
+@keyframes expandLine {
+  0% {
+    width: 0%;
+    left: 0%;
+  }
+
+  50% {
+    width: 100%;
+    left: 0%;
+  }
+
+  100% {
+    width: 0%;
+    left: 0%;
+  }
+}
+
+.sub-title {
+  font-family: "Coiny", system-ui;
+  font-weight: 200;
+  font-style: normal;
+  text-align: center;
+  font-size: 20px;
+  color: #2D1E6B;
+  margin: 1.2rem 0;
+}
+
+.light-sub-title {
+  font-family: "Coiny", system-ui;
+  font-weight: 200;
+  font-style: normal;
+  text-align: center;
+  font-size: 20px;
+  color: #ffffff;
+  margin: 1.2rem 0;
+}
+
+.para {
+  font-family: "Sour Gummy", sans-serif;
+  color: #373737;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  text-align: justify;
+}
+
+.light-para {
+  font-family: "Sour Gummy", sans-serif;
+  color: #ffffffdc;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+.bold-para {
+  font-family: "Sour Gummy", sans-serif;
+  color: #686D76;
+  font-size: 16px;
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  margin: 0.7rem auto;
+  max-width: 1200px;
+}
+
+
+.light-bold-para {
+  font-family: "Sour Gummy", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin: 0.7rem 0;
+}
+
+
+a {
+  color: #2b3764;
+  text-decoration: none;
+}
+
+
+
+
+/* vertical scroll */
+
+/* Scrollbar Track (White Background) */
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 10px;
+}
+
+/* Thumb (Blue Glowing Bar) */
+::-webkit-scrollbar-thumb {
+  background: #007bff;
+  border-radius: 10px;
+}
+
+/* Hover Effect - Intensified Glow */
+::-webkit-scrollbar-thumb:hover {
+  background: #0056b3;
+}
+
+/* Firefox Scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #007bff #ffffff;
+}
+
+
+
+
+
+/* From Uiverse.io by vinodjangid07 */
+.Btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100px;
+  height: 40px;
+  border: none;
+  padding: 0px 20px;
+  background-color: rgb(168, 38, 255);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px rgb(140, 32, 212);
+  transition-duration: .3s;
+}
+
+.svg {
+  width: 13px;
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  fill: white;
+  transition-duration: .3s;
+}
+
+.Btn:hover {
+  color: transparent;
+}
+
+.Btn:hover svg {
+  right: 43%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  transition-duration: .3s;
+}
+
+.Btn:active {
+  transform: translate(3px, 3px);
+  transition-duration: .3s;
+  box-shadow: 2px 2px 0px rgb(140, 32, 212);
+}
+
+
+.mobile-device {
+  display: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .tagline {
+    font-size: 2rem;
+    font-family: "Rubik Gemstones", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: capitalize;
+    color: rgb(140, 32, 212);
+    margin: 0 auto;
+  }
+
+  .mobile-device {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

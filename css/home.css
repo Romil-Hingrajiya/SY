@@ -1,0 +1,234 @@
+/* Why Choose Us */
+.why-choose {
+    position: relative;
+    width: 95%;
+    max-width: 1200px;
+    margin: 25px auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: url('../images/about-bg-1.jpeg') no-repeat center center/cover;
+    border-radius: 20px;
+    background-attachment: fixed;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000099;
+}
+
+.content-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.text-content {
+    max-width: 70%;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .background {
+        height: 600px;
+    }
+
+}
+
+
+
+/* Benefits Section */
+.difference {
+    padding: 2rem 0;
+}
+
+
+.container-box {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-box {
+    background: linear-gradient(135deg, #5a5a5a, #1e1e1e, #3C3D37);
+    border: 1px solid rgb(140, 32, 212);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.light-box {
+    background: #fff;
+    color: #111;
+    border: 1px solid #2b3264;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.point {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.point i {
+    font-size: 18px;
+    color: #8a2be2;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin: 4rem auto;
+    }
+}
+
+
+
+/* newsletter */
+.subscribe-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe-img {
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-right: -10px;
+    z-index: 100;
+}
+
+.newsletter {
+    background: #fff;
+    padding: 30px;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    max-height: 450px;
+    margin: 0 auto;
+}
+
+/* From Uiverse.io by Bodyhc */
+.subscribe-input {
+    display: inline-block;
+    position: relative;
+    margin: 1.6rem auto;
+}
+
+.subscribe-input input[type="text"] {
+    font-family: "Coiny", system-ui;
+    width: 300px;
+    max-width: 350px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe-input button[type="submit"] {
+    font-family: "Coiny", system-ui;
+    background-color: #2b3264;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .9s ease;
+}
+
+.subscribe-input button[type="submit"]:hover {
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+    background-color: blue;
+}
+
+@media screen and (max-width: 768px) {
+    .subscribe-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .subscribe-img {
+        width: 95%;
+        margin-right: 0px;
+    }
+
+    .newsletter {
+        border-radius: 10px;
+    }
+}
+
+
+
+/* enroll btn */
+.enroll-btn {
+    font-family: "Rubik Gemstones", system-ui;
+    font-size: 1rem;
+    letter-spacing: 5px;
+    padding: 1rem 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgb(14, 14, 26);
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    transition: 0.6s;
+    box-shadow: 0px 0px 60px #1f4c65;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4));
+}
+
+.enroll-btn:active {
+    scale: 0.92;
+}
+
+.enroll-btn:hover {
+    background: rgb(2, 29, 78);
+    background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+    color: rgb(4, 4, 38);
+}
